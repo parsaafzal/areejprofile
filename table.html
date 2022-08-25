@@ -4,13 +4,40 @@
         <style>
           table,  th,td{
                 border: 1px solid black;
+                border: 1px solid black;
                 border-collapse: collapse;
+                border-radius: 5ch;
+                border-spacing: 10px;
+
             }
+            th,td{
+                background-color: red;
+            }
+            th{
+                border-style: dotted;
+            border-color: blue;
+            }
+            td{
+                text-align: center;
+                padding: 20px;
+            }
+            tr:nth-child(even) {
+                background-color: aqua;
+
+            }
+            td:nth-child(even), th:nth-child(even){
+                background-color: aquamarine;
+            }
+            tr:hover{background-color: beige;}
+
         </style>
     </head>
     <body>
     
-        <table>
+        <table style="width: 50%;">
+            <colgroup>
+                <col span="2" style="background-color: beige;">
+            </colgroup>
             <h2>Table Data</h2>
             <tr>
                 <th>N.no</th>
@@ -28,5 +55,19 @@
                 <td>ateel@ gmail.com</td>
             </tr>
         </table>
+        <ul style="list-style:square;">
+            <li>pets</li>
+            <li>dogs</li>
+        </ul>
+        <ol type="I">
+            <li>pets</li>
+            <li>dogs</li>
+        </ol>
+        <dl>
+            <dt>cofee</dt>
+            <dd>-chapter 1 a</dd>
+            <dd>-chapter 1 b</dd>
+            <dd>-chapter 1 c</dd>
+        </dl>
     </body>
 </html>
