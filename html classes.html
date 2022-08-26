@@ -1,10 +1,57 @@
 <html>
     <head>
+<style>
+    .city{
+        background-color: azure;
+        color: rgb(107, 219, 219);
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+    }
+    .abc{
+        background-color: black;
+        text-shadow: 20px;
+        text-decoration: solid cornflowerblue;
+    }
+    .btn{
+        background-color: aquamarine;
+        border-radius: 20px;
+        border-color:red;
+        border-style: dotted;
+        height: 70px;
+        width: 100px;
+        
 
+    }
+</style>
     </head>
     <body>
-        <div>
-            <p>this is pincle</p>
+        <div class="city">
+            <p class="abc">this is pincle</p>
         </div>
+        <div style="background-color:red ;color:aqua;margin-bottom: 20px;">
+            <h3>lahore</h3>
+
+        </div>
+        
+        <div style="background-color:red ;color:aqua;">
+            <h3>lahore</h3>
+            <div class="areej">
+                <p>this is pincle</p>
+            </div>
+
+        </div>
+       <center> <button onclick="myFunction()" class="btn"> hide element</button></center>
+       <h2 class="city">paris</h2>
+        <p this is pincle</p>
+    
+       <script>
+    function myFunction(){
+        var x= document.getElementsByTagName("city");
+        for(var i=0;i<x.length;i++){
+            x[i].style.display="none";
+        } 
+    }
+</script>
     </body>
 </html>
