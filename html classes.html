@@ -41,15 +41,25 @@
             </div>
 
         </div>
-       <center> <button onclick="myFunction()" class="btn"> hide element</button></center>
-       <h2 class="city">paris</h2>
-        <p this is pincle</p>
+       <center> <button onclick="hideFunction()"> hide element</button></center>
+       <center> <button onclick="showFunction()"> show element</button></center>
+      <div class="areej">
+       <h2>paris</h2>
+        <p this is pincle</p></div>
     
        <script>
-    function myFunction(){
-        var x= document.getElementsByTagName("city");
+    function hideFunction(){
+        var x= document.getElementsByClassName("areej");
         for(var i=0;i<x.length;i++){
             x[i].style.display="none";
+        } 
+    }
+</script>
+<script>
+    function showFunction(){
+        var x= document.getElementsByClassName("areej");
+        for(var i=0;i<x.length;i++){
+            x[i].style.display="block";
         } 
     }
 </script>
