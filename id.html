@@ -1,0 +1,47 @@
+<html>
+    <head>
+        
+        <style>
+            #areej{
+                background-color: azure;
+                color: rgb(107, 219, 219);
+                border: 2px solid black;
+                margin: 20px;
+                padding: 20px;
+            }
+            </style>
+    </head>
+    <body>
+        <center> <button onclick="hideFunction()"> hide element</button></center>
+        <center> <button onclick="showFunction()"> show element</button></center>
+       <div Id="areej">
+        <h2>paris</h2>
+         <p this is pincle</p></div>
+     
+        <script>
+     function hideFunction(){
+         var x= document.getElementById("areej");
+         for(var i=0;i<x.length;i++){
+             x[i].style.display="none";
+         } 
+     }
+ </script>
+ <script>
+     function showFunction(){
+         var x= document.getElementsById("areej");
+         for(var i=0;i<x.length;i++){
+             x[i].style.display="block";
+         } 
+     }
+ </script>
+ <iframe  width="200" height="200" src="https://www.w3schools.com/html/html5_video.asp" 
+    title="w3schools"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+ <iframe width="340" height="260" src="https://www.youtube.com/embed/khDn_kFXBec" 
+ title="Tom & Jerry in italiano | I momenti più divertenti di Jerry!  🐭 | WB Kids"
+  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+   allowfullscreen></iframe>
+   
+    </body>
+</html>
