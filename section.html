@@ -19,13 +19,14 @@
                 height: 250px;
             }
           
-            img{
+            .image{
             
                 display: inline-block;
                 width:13vw;
                 height: 13vw;
                 padding: 10px;
-                float: left;
+                float:left;
+                border-radius: 20;
             }
             .areej{
                 text-align: center;
@@ -59,15 +60,41 @@
                 font-size:20px;
                 text-align: center;
             }
+           
             
             
+            .main{
+                background-color: bisque;
+                height: 500px;
+                width: 70%;
+                text-align: center;
+            }
+            .textbox{
+                text-align: center;
+            }
+            .text1{
+                background-color: darkgray;
+            display: inline-block;
+            width: 30%;
+            margin: 1vw;
+            text-align: center;
+            padding: 1vw;
+            border-radius: 10px;
+            color: rgb(2, 70, 11);
+            }
+            .pic{
+               border-radius: 50px;
+
+            }
             
+            
+           
         </style>
     </head>
 
     <body>
         <header>
-            <div >
+            <div class="image" >
                 <img src="profile.jpg" alt=" image loding" width="100" height="100">
             </div>
               <div class="areej">
@@ -89,5 +116,23 @@
               </div>
 
             </header>
+            <div class="main">
+                <div class="pic">
+                <img src="profile.jpg" alt=" image loding" width="100" height="100">
+                <img src="profile.jpg" alt=" image loding" width="100" height="100">
+                <img src="profile.jpg" alt=" image loding" width="100" height="100"></div>
+                <div class="textbox">
+                    <div class="text1">
+                        <h>web design</h>
+                        <p>this is pepole</p>
+                    </div>
+                    <div class="text1">
+                        <h>graphic design</h>
+                        <p>this is graphic</p>
+                    </div>
+                </div>
+
+            </div>
+            
     </body>
 </html>
