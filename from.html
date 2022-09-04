@@ -1,81 +1,105 @@
 <html>
     <head>
-        <title> form</title>
-<style>
-    body{
-        background-color: aquamarine;
-    }
-    .form{
-        background-color: beige;
-        width: 50%;
-        height: 50%;
-        text-align: center;
-        border-radius: 20px;
-        display: block;
-    }
-</style>
+        <title>Registration Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
+    <style>
+         *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body{
+                font-family:Arial, Helvetica, sans-serif;
+                background-color:gray;
+                text-align: center;
+                
+            }
+
+        .ReForm{
+            background-color: bisque;
+            text-align: center;
+            border-radius: 5vw;
+            width: 50vw;
+
+            
+            
+
+        }
+        label{
+            width: 100px;
+            display: inline-block;
+          
+        }
+       form{
+           
+            background: color #777;
+            border-radius: 12vw;
+            padding-top: 2vw;
+            padding-bottom: 2vw;
+            border-bottom: 4px solid white;
+            border-top:4px solid white ;
+
+            
+        }
+        .icon{
+            padding: 10px;
+            color: green;
+            min-width: 50px;
+            text-align: center;
+            font-awesome
+            
+        }
+    </style>
     <body>
-        <div class="form">
-        <form>
-            <table>
-                <tr>
-                    <td>
-                        Name:
-                    </td>
-                    <td>
-                        <input type="text" name="">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        DateOfBirth:
-                    </td>
-                    <td>
-                        <input type="date" >
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        FatherName:
-                    </td>
-                    <td>
-                        <input type="text"  placeholder="FatherName" FatherName="">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Gender:
-                    </td>
-                    <td>
-                        <input type="radio" name=" Gender">Male
-                        <input type="radio" name=" Gender">FeMale
-                    </td>
-                </tr>
-            </tr>
-            <tr>
-                <td>
-                    Phone:
-                </td>
-                <td>
-                    <select>
-                        <option>457</option>
-                        <option>857</option>
-                        <option>477</option>
-                        <option>677</option>
-                    </select>
-                    <input type="text"  placeholder="PhoneNo" PhoneNo ="">
-                </td>
-            </tr>
-            <tr>
-               
-                <td>
-                    <input type="submit" value=" submit" name="">
-                    <input type="reset"  value=" reset" name=" ">
-                </td>
-            </tr>
-            </table>
-        </form>
-        </div>
+        <div class="ReForm">
+            <form>
+        <h2> Registration Form</h2>
+         <i class="fa fa-user icon"></i>
+        <label for="Name"> First Name:</label>
+        <input type="text" Name="">
+        <br><br>
+        <i class="fa fa-user icon"></i>
+        <label for=" Last Name"> Last Name:</label>
+        <input type="text" Name="">
+        <br><br>
+        
+        <label for=" E-mail"> E-Mail:</label>
+        <input type="text" E-Mail="">
+        <br><br>
+        <label for="Phone #"> Phone #:</label>
+        <select>
+            <option value=" ">Azerbaijan(+994)</option>
+            <option value=" ">France(+33) </option>
+            <option value=" ">Pakistan(+92)</option>
+        </select>
+        <input type="text" Phone #="">
+        <br><br>
+        <label for="Date Of Birth"> Date Of Birth:</label>
+        <input type="date" Date Of Birth="">
+        <br><br>
+        <label for=" Gender"> Gender:</label>
+        <input type="radio" name="" >Male
+        <input type="radio" name="">FeMale
+        <br><br>
+        <label for=" Address"> Address:</label>
+        <textarea cols="20" rows="5" value="Address">
+        </textarea>
+        <br><br>
+        <label for=" chose interest"> Chose Your Intrest:</label>
+        <br>
+        <input type="checkbox" value="" name="Books">Books
+        <input type="checkbox" value="" name="Sport">Sport
+        <input type="checkbox" value="" name="Computer">Computer
+        <input type="checkbox" value="" name="Programing">Programing
+        <br><br>
+        <label for=""> Chose File:</label>
+        <input type="file" name="">
+        <br><br>
+        <input type="submit" name="Submit">
+        <input type="reset" name="Reset">
+    </form>
+   </div>
     </body>
 </html>
